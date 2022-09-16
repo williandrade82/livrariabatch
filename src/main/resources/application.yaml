@@ -1,0 +1,13 @@
+file:
+  chunk: cadastro_livros.csv
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:D:\FIAP\Fase 03\datasource\livrariaBatch-on;DB_CLOSE_ON_EXIT=TRUE
+      username: fiap
+      password: fiap
+  batch:
+    jdbc:
+      initialize-schema: always
+      schema: schema.sql
